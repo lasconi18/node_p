@@ -1,0 +1,78 @@
+1. iniciar um projeto node -> npm init -y
+2 configurar a arquitetura do projeto
+
+nodeapi/
+│-- src/
+│   ├── controllers/
+│   │   ├── user.controller.ts
+│   ├── routes/
+│   │   ├── user.routes.ts
+│   ├── middlewares/
+│   │   ├── error.middleware.ts
+│   ├── models/
+│   │   ├── user.model.ts
+│   ├── services/
+│   │   ├── user.service.ts
+│   ├── app.ts
+│   ├── server.ts
+│-- package.json
+│-- tsconfig.json
+│-- .env
+
+DEPENDENCIAS DO projeto
+
+DEPENDENCIAS DE PRODUÇÃO
+EXPRESS - framework para criar servidores e apis REST
+instalação: npm install express
+
+DOTENV - gerencia variaveis de ambiente
+instalação: npm install dotenv 
+
+CORS - permite que a api seja acessada de diferentes origens
+instalação: npm install @types/cors
+
+BODY-PARSER - CONVERTE O CORPO DA REQUISIÇÃO PARA JSON AUTOMATICAMENTE
+instalação: npm install body-parser 
+
+EXPRESS-ASYNC-ERRORS - FACILITA O TRATAMENTO DE ERROS EM ROTAS ASSINCRONAS
+npm install express-async-errors 
+
+DEPENDENCIAS DE DESENVOLVIMENTO
+
+TYPESCRIPT - COMPILADOR QUE CONVERTE TS PARA JS 
+instalação: npm install typscript --save-dev 
+
+@types/node - DEFINE OS TIPOS DO NODE PARA QUE O TYPESCRIPT RECONHEÇA OS MÓDULOS FS, PATH, HTTP
+instalação: npm install @types/node 
+
+@types/express - DEFINE OS TIPOS PARA O EXPRESS PARA EVITAR ERROS AO USA-LO NO TYPESCRIPT
+instalação: npm install @types/express 
+
+TS-NODE - EXECUTA ARQUIVOS TYPESCRIPT DIRETAMENTE
+instalação: npm install ts-node 
+
+NODEMON - reinicia o servidor automaticamente quando reconhece uma alteração no codigo fonte
+instalação: npm install nodemon 
+
+configurar o TYPESCRIPT
+comando: npx tsc --init
+
+//configurar package.json
+"dev" : "nodemon src src/server.ts"
+
+configurar o nodemon
+criar um arquivo na raiz chamado nodemon.json
+
+npm i knex
+
+knex trabalha com migrations que sao arquivos programaveis para criar tabelas
+para criar migration rode o comando 
+npx knex migrate: make nome_migration
+
+create_users_table
+alter_users_table
+
+npm i jsonwebtoken - para usar token de validação jsonwebtoken
+npm i -D @types/bcryptjs - para encryptar senhas
+
+

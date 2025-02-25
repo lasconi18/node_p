@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de usuarios</h1>
+    <form action="">
+        <input type="text" id="name" placeholder="Nome"/>
+        <br>
+        <input type="text" id="email" placeholder="email"/>
+        <br>
+        <button type="submit" onclick="addUser()" id="botao">Enviar</button>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>EMAIL</th>
+                <th>AÇÕES</th>
+            </tr>
+        </thead>
+        <tbody id="dados">
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+        
+</body>
+</html>

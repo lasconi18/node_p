@@ -1,0 +1,35 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "from": "^0.1.7",
+    "import": "^0.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/knex": "^0.15.2",
+    "@types/node": "^22.13.4",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
