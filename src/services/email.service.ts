@@ -20,10 +20,8 @@ const mailOptions = {
     text: "Aqui vai o conteúdo"
 }
 
-async function main() {
+export async function enviaEmail() {
     const envio = await transporter.sendMail(mailOptions)
     console.log(envio);
     
 }
-
-main().catch(console.error)
